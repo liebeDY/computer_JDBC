@@ -50,13 +50,7 @@ public class DBTest {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		
-				
-				
-				
 	}
-
-
 }
 
 
