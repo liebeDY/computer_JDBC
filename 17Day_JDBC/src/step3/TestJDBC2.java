@@ -1,12 +1,11 @@
-package step2;
+package step3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TestJDBC1 {
+public class TestJDBC2 {
 
 	public static void main(String[] args) {
 
@@ -20,22 +19,20 @@ public class TestJDBC1 {
 			Class.forName(jdbc_driver);
 			conn = DriverManager.getConnection(jdbc_url, "hr", "hr");
 			stmt = conn.createStatement();
-			String sql = "select id, password, name, address from member";
 			
-			ResultSet rs = stmt.executeQuery(sql);
+			// spring, aaaa, 장매력, 길동 추가하기
+			String sql = "insert into member(id, password, name, address) values ('spring', 'aaaa', '김연아', '안양')";
 			
-			while(rs.next()) {
-				System.out.println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4));
-			}
+			// row 숫자
+			int result = stmt.executeUpdate(sql);
+			System.out.println(result);
 			
-			rs.close();
 			stmt.close();
 			conn.close();
-			
 		} catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
+		} 	
 	}
 }
