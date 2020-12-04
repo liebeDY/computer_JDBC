@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TestJDBC4 {
+public class TestJDBC3 {
 
 	public static void main(String[] args) {
 
