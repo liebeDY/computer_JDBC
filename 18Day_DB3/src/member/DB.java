@@ -8,6 +8,18 @@ import java.util.Scanner;
 
 public class DB {
 
+	/*
+	 *  create sequence Member_seq;
+
+		create table Member (
+		num number,
+		name varchar2(50) primary key,
+		addr varchar2(50) not null,
+		tel varchar2(50) not null
+		);
+	 */
+	
+	
 	public Connection conn = null;
 	public PreparedStatement pstmt = null;
 	public String jdbc_driver;
