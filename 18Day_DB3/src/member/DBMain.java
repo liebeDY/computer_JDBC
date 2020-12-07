@@ -23,19 +23,21 @@ public class DBMain {
 				break;
 				
 			case 2:
-				
+				d.MemberPrint();
 				break;
 				
 			case 3:
-				
+				System.out.println("검색할 이름을 입력하세요 : ");
+				String name = sc.next();
+				d.MemberSearch(name);
 				break;
 				
 			case 4:
-				
+				d.update();
 				break;
 				
 			case 5:
-				
+				d.delete();
 				break;
 				
 			case 6:
