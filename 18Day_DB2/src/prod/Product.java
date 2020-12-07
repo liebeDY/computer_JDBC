@@ -192,8 +192,8 @@ public class Product {
 			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, cus);
-			pstmt.setInt(3, p_id);
-			pstmt.setInt(4, num);
+			pstmt.setInt(2, p_id);
+			pstmt.setInt(3, num);
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			System.out.println(e);
