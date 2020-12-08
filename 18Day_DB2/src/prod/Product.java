@@ -144,8 +144,6 @@ public class Product {
 		Scanner sc = new Scanner(System.in);
 		
 		// 입력받기
-//		System.out.println("제조사 : ");
-//		co = sc.next();
 		System.out.println("상호명 :");
 		String cus = sc.next();
 		System.out.println("제품번호 : ");
