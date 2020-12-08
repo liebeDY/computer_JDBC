@@ -59,8 +59,9 @@ public class DBMain {
 				flag = false;
 				break;
 				
-            default:                                                                                                                                                                                     			default :
+            default :
 				System.out.println("잘못 입력");
+			
 			}
 		}
 	}
